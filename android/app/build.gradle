@@ -58,11 +58,12 @@ android {
 
     signingConfigs {
         release {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
-            storePassword keystoreProperties['storePassword']
+            storeFile file("/home/anonkwe/Desktop/android-studio/keystore.jks")
+            storePassword "Prem.2018!"
+            keyAlias "my_alias"
+            keyPassword "Prem.2018!"
         }
+
     }
 
     buildTypes {
